@@ -18,7 +18,7 @@ a {
 }
 .search-portion {
   padding-top: 40px;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 .current-plus-forecast-container {
   display: flex;
@@ -27,8 +27,7 @@ a {
   background-color: rgba(240, 248, 255, 0.8);
   margin-top: 20px;
   margin-left: 20px;
-  max-width: 300px;
-  max-height: 90%;
+  width: 350px;
   border-radius: 10px;
   padding: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -36,8 +35,8 @@ a {
 .forecast-container {
   background-color: rgba(240, 248, 255, 0.8);
   margin-top: 20px;
-  margin-left: 10px;
-  width: 400px;
+  margin-left: 40px;
+  width: 60%;
   border-radius: 10px;
   padding: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
