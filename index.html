@@ -20,36 +20,77 @@
         <input type="submit" value="Search" class="search-form-button" />
       </form>
     </header>
-    <div class="container">
-      <main>
-        <div class="weather-data">
-          <div class="date-time-city">
-            <p class="date-time">
-              <span id="day">Sunday January 21, 2024</span>
-              <br />
-              <span id="time-hours">2</span>
-              <span id="time-minutes">:51</span>
-              <span id="am-pm">pm</span>
-            </p>
-            <h1 id="city"></h1>
-          </div>
-          <div class="temp-container">
-            <div class="current-temp" id="current-temp"></div>
-            <span class="degrees-icon">°F</span>
-          </div>
-          <div class="weather-details">
-            <div class="weather-icon" id="weather-icon">
-              <img src="" />
+    <div class="current-plus-forecast-container">
+      <div class="container">
+        <main>
+          <div class="weather-data">
+            <div class="date-time-city">
+              <p class="date-time">
+                <span id="day">Sunday January 21, 2024</span>
+                <br />
+                <span id="time-hours">2</span>
+                <span id="time-minutes">:51</span>
+                <span id="am-pm">pm</span>
+              </p>
+              <h1 id="city"></h1>
             </div>
-            <span id="conditions"></span>
-            <br />
-            Humidity: <span class="weather-bold" id="humidity-value"></span>
-            <br />
-            Wind: <span class="weather-bold" id="windspeed-value"></span>
+            <div class="temp-container">
+              <div class="current-temp" id="current-temp"></div>
+              <span class="degrees-icon">°F</span>
+            </div>
+            <div class="weather-details">
+              <div class="weather-icon" id="weather-icon">
+                <img src="" />
+              </div>
+              <span id="conditions"></span>
+              <br />
+              Humidity: <span class="weather-bold" id="humidity-value"></span>
+              <br />
+              Wind: <span class="weather-bold" id="windspeed-value"></span>
+            </div>
           </div>
+        </main>
+      </div>
+      <div class="forecast-container">
+        <div class="forecast-day-1">
+          <div class="day-1">Wed</div>
+          <br />
+          <div class=day-1-icon>🌧</div>
+          <br />
+          <div class=day-1-temps><span class="high-temp">21°</span><br /> 19°</div>
         </div>
-      </main>
+        <div class="forecast-day-2">
+          <div class="day-1">Thu</div>
+          <br />
+          <div class=day-1-icon>🌧</div>
+          <br />
+          <div class=day-1-temps><span class="high-temp">21°</span><br /> 19°</div>
+        </div>
+        <div class="forecast-day-3">
+          <div class="day-1">Fri</div>
+          <br />
+          <div class=day-1-icon>🌧</div>
+          <br />
+          <div class=day-1-temps><span class="high-temp">21°</span><br /> 19°</div>
+        </div>
+        <div class="forecast-day-4">
+          <div class="day-1">Sat</div>
+          <br />
+          <div class=day-1-icon>🌧</div>
+          <br />
+          <div class=day-1-temps><span class="high-temp">21°</span><br /> 19°</div>
+        </div>
+        <div class="forecast-day-5">
+          <div class="day-1">Sun</div>
+          <br />
+          <div class=day-1-icon>🌧</div>
+          <br />
+          <div class=day-1-temps><span class="high-temp">21°</span><br /> 19°</div>
+        </div>
+      </div>
     </div>
+    </div>
+    <br />
     <footer>
       This project was coded by
       <a href="https://github.com/christinemsantos" target="blank"
