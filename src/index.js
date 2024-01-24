@@ -81,4 +81,23 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-section");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
+function displayForecast() {
+  let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="forecast-day-1">
+          <div class="day-1">${day}</div>
+          <br />
+          <div class=day-1-icon>🌧</div>
+          <br />
+          <div class=day-1-temps><span class="high-temp">21°</span><br /> 19°</div>
+        </div>`;
+  });
+  let forecast = document.querySelector("#forecast");
+  forecast.innerHTML = forecastHtml;
+}
 searchCity("Hartford");
+displayForecast();
