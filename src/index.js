@@ -34,7 +34,6 @@ function displayWeather(response) {
   let currentIcon = document.querySelector("#weather-icon");
   let currentConditions = document.querySelector("#conditions");
 
-  console.log(response.data);
   currentDate.innerHTML = `${wordDay[date.getDay()]} ${
     wordMonth[date.getMonth()]
   } ${date.getDate()}, ${date.getFullYear()}`;
@@ -63,6 +62,8 @@ function displayWeather(response) {
   currentWind.innerHTML = `${response.data.wind.speed}mph`;
   currentIcon.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon"/>`;
   currentConditions.innerHTML = response.data.condition.description;
+
+  getForecast(response.data.city);
 }
 function searchCity(city) {
   let apiKey = "af51t24f57b6fo0d3407bf1a846aaa92";
@@ -81,7 +82,15 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-section");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "af51t24f57b6fo0d3407bf1a846aaa92";
+  let forecastUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+  axios(forecastUrl).then(displayForecast);
+  console.log(forecastUrl);
+}
+function displayForecast(response) {
+  console.log(response.data);
+
   let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
   let forecastHtml = "";
 
@@ -100,4 +109,3 @@ function displayForecast() {
   forecast.innerHTML = forecastHtml;
 }
 searchCity("Hartford");
-displayForecast();
