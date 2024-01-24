@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <title>Weather</title>
+    <title>Weather Forecast</title>
   </head>
   <body>
+    <header class="search-portion">
+      <form class="search-form" id="search-section">
+        <input
+          type="search"
+          placeholder="Enter a city..."
+          required
+          class="search-form-input"
+          id="search-input"
+        />
+        <input type="submit" value="Search" class="search-form-button" />
+      </form>
+    </header>
     <div class="container">
-      <header>
-        <form class="search-form" id="search-section">
-          <input
-            type="search"
-            placeholder="Enter a city..."
-            required
-            class="search-form-input"
-            id="search-input"
-          />
-          <input type="submit" value="Search" class="search-form-button" />
-        </form>
-      </header>
       <main>
         <div class="weather-data">
           <div class="date-time-city">
