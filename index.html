@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form class="search-form" id="search-section">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-data">
+          <div class="date-time-city">
+            <p class="date-time">
+              <span id="day">Sunday January 21, 2024</span>
+              <br />
+              <span id="time-hours">2</span>
+              <span id="time-minutes">:51</span>
+              <span id="am-pm">pm</span>
+            </p>
+            <h1 id="city"></h1>
+          </div>
+          <div class="temp-container">
+            <div class="current-temp" id="current-temp"></div>
+            <span class="degrees-icon">°F</span>
+          </div>
+          <div class="weather-details">
+            <div class="weather-icon" id="weather-icon">
+              <img src="" />
+            </div>
+            <span id="conditions"></span>
+            <br />
+            Humidity: <span class="weather-bold" id="humidity-value"></span>
+            <br />
+            Wind: <span class="weather-bold" id="windspeed-value"></span>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      This project was coded by
+      <a href="https://github.com/christinemsantos" target="blank"
+        >Christine Santos</a
+      >
+      hosted on
+      <a
+        href="https://github.com/christinemsantos/Weather-Project"
+        target="blank"
+        >GitHub</a
+      >
+      and website hosted on
+      <a
+        href="https://app.netlify.com/teams/christinemsantos/overview"
+        target="blank"
+        >Netlify</a
+      >
+    </footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>
